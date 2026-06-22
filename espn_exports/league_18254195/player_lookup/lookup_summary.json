@@ -1,0 +1,108 @@
+{
+  "enrichment": {
+    "enabled": true,
+    "season_summaries": {
+      "2020": {
+        "actual_stat_rows_merged": 4207,
+        "discovered_player_ids": 284,
+        "errors": [],
+        "players_returned": 284,
+        "requests": 6,
+        "successes": 6
+      },
+      "2021": {
+        "actual_stat_rows_merged": 4404,
+        "discovered_player_ids": 280,
+        "errors": [],
+        "players_returned": 280,
+        "requests": 6,
+        "successes": 6
+      },
+      "2022": {
+        "actual_stat_rows_merged": 4402,
+        "discovered_player_ids": 280,
+        "errors": [],
+        "players_returned": 280,
+        "requests": 6,
+        "successes": 6
+      },
+      "2023": {
+        "actual_stat_rows_merged": 3862,
+        "discovered_player_ids": 244,
+        "errors": [],
+        "players_returned": 244,
+        "requests": 5,
+        "successes": 5
+      },
+      "2024": {
+        "actual_stat_rows_merged": 4212,
+        "discovered_player_ids": 265,
+        "errors": [],
+        "players_returned": 265,
+        "requests": 6,
+        "successes": 6
+      },
+      "2025": {
+        "actual_stat_rows_merged": 4198,
+        "discovered_player_ids": 264,
+        "errors": [],
+        "players_returned": 264,
+        "requests": 6,
+        "successes": 6
+      },
+      "2026": {
+        "actual_stat_rows_merged": 0,
+        "discovered_player_ids": 152,
+        "errors": [],
+        "players_returned": 152,
+        "requests": 4,
+        "successes": 4
+      }
+    }
+  },
+  "extraction": {
+    "box_scores": {
+      "box_score_files": 118,
+      "box_score_player_entries": 18333,
+      "box_score_player_ids": 566
+    },
+    "trades": {
+      "trade_items": 14232,
+      "trade_player_ids": 415,
+      "trade_status_counts": {
+        "CANCELED": 2237,
+        "EXECUTED": 2204,
+        "PENDING": 1328,
+        "UNKNOWN": 180
+      },
+      "trade_transactions": 5949,
+      "trade_type_counts": {
+        "TRADE_ACCEPT": 279,
+        "TRADE_DECLINE": 1954,
+        "TRADE_PROPOSAL": 3561,
+        "TRADE_UPHOLD": 143,
+        "TRADE_VETO": 12
+      }
+    }
+  },
+  "generated_at": "2026-06-22T21:11:52.847284+00:00",
+  "outputs": {
+    "lookup_summary": "/Users/jakemilken/Documents/MyGM/espn_exports/league_18254195/player_lookup/lookup_summary.json",
+    "player_weekly_points": "/Users/jakemilken/Documents/MyGM/espn_exports/league_18254195/player_lookup/player_weekly_points.json",
+    "player_weekly_points_flat": "/Users/jakemilken/Documents/MyGM/espn_exports/league_18254195/player_lookup/player_weekly_points_flat.json",
+    "trade_player_coverage": "/Users/jakemilken/Documents/MyGM/espn_exports/league_18254195/player_lookup/trade_player_coverage.json"
+  },
+  "players_total": 574,
+  "players_with_names": 574,
+  "players_with_weekly_points": 574,
+  "trade_coverage": {
+    "executed_trade_accept_player_ids": 103,
+    "executed_trade_accept_player_ids_without_points": [],
+    "no_weekly_points_player_ids": [],
+    "trade_player_ids": 415,
+    "trade_player_ids_with_names": 415,
+    "trade_player_ids_with_weekly_points": 415,
+    "unresolved_name_player_ids": []
+  },
+  "weekly_point_rows": 28294
+}
