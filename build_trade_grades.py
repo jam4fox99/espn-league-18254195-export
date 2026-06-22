@@ -58,14 +58,14 @@ def grade_for_net(net_points: float | None) -> str | None:
 def team_display_name(team: dict[str, Any]) -> str:
     name = team.get("name")
     if name:
-        return str(name)
+        return str(name).strip()
     location = team.get("location")
     nickname = team.get("nickname")
     if location or nickname:
-        return " ".join(str(part) for part in [location, nickname] if part)
+        return " ".join(str(part).strip() for part in [location, nickname] if part).strip()
     abbrev = team.get("abbrev")
     if abbrev:
-        return str(abbrev)
+        return str(abbrev).strip()
     team_id = team.get("id")
     return f"Team {team_id}" if team_id is not None else "Unknown Team"
 
@@ -191,6 +191,24 @@ def player_names_for_csv(players: list[dict[str, Any]]) -> str:
     )
 
 
+def usable_trade_items(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return [
+        item
+        for item in items
+        if item.get("type") == "TRADE"
+        and item.get("playerId") is not None
+        and item.get("toTeamId") not in (None, 0)
+        and item.get("fromTeamId") not in (None, 0)
+    ]
+
+
+def group_items_by_receiving_team(trade_items: list[dict[str, Any]]) -> dict[int, list[dict[str, Any]]]:
+    grouped: dict[int, list[dict[str, Any]]] = {}
+    for item in trade_items:
+        grouped.setdefault(int(item["toTeamId"]), []).append(item)
+    return grouped
+
+
 def grade_trade(
     tx: dict[str, Any],
     *,
@@ -198,24 +216,35 @@ def grade_trade(
     final_week: int,
     players: dict[str, dict[str, Any]],
     include_trade_week: bool,
+    transactions_by_season_id: dict[tuple[int, str], dict[str, Any]],
 ) -> dict[str, Any]:
     season = int(tx["_season"])
     trade_week = int(tx.get("scoringPeriodId") or 0)
     start_week = trade_week if include_trade_week else trade_week + 1
     trade_date_ms = tx.get("processDate") or tx.get("proposedDate")
     raw_items = tx.get("items") or []
-    trade_items = [
-        item
-        for item in raw_items
-        if item.get("type") == "TRADE"
-        and item.get("playerId") is not None
-        and item.get("toTeamId") not in (None, 0)
-        and item.get("fromTeamId") not in (None, 0)
-    ]
+    trade_items = usable_trade_items(raw_items)
+    grouped = group_items_by_receiving_team(trade_items)
+    trade_item_source = "accept_transaction"
+    trade_item_source_transaction_id = tx.get("id")
+    trade_item_source_type = tx.get("type")
+    trade_item_source_status = tx.get("status")
+    trade_item_source_raw_item_count = len(raw_items)
 
-    grouped: dict[int, list[dict[str, Any]]] = {}
-    for item in trade_items:
-        grouped.setdefault(int(item["toTeamId"]), []).append(item)
+    if len(grouped) != 2 and tx.get("relatedTransactionId"):
+        related_tx = transactions_by_season_id.get((season, str(tx["relatedTransactionId"])))
+        if related_tx:
+            related_items = related_tx.get("items") or []
+            related_trade_items = usable_trade_items(related_items)
+            related_grouped = group_items_by_receiving_team(related_trade_items)
+            if len(related_grouped) == 2:
+                trade_items = related_trade_items
+                grouped = related_grouped
+                trade_item_source = "related_transaction"
+                trade_item_source_transaction_id = related_tx.get("id")
+                trade_item_source_type = related_tx.get("type")
+                trade_item_source_status = related_tx.get("status")
+                trade_item_source_raw_item_count = len(related_items)
 
     row: dict[str, Any] = {
         "trade_id": tx.get("id"),
@@ -233,6 +262,11 @@ def grade_trade(
         "raw_item_count": len(raw_items),
         "trade_item_count": len(trade_items),
         "receiving_team_count": len(grouped),
+        "trade_item_source": trade_item_source,
+        "trade_item_source_transaction_id": trade_item_source_transaction_id,
+        "trade_item_source_type": trade_item_source_type,
+        "trade_item_source_status": trade_item_source_status,
+        "trade_item_source_raw_item_count": trade_item_source_raw_item_count,
         "grade_status": "ungraded",
         "ungraded_reason": None,
         "team_a_id": None,
@@ -316,6 +350,11 @@ def build_trade_grade_rows(
     team_maps, final_periods = load_team_maps(export_root)
     players = load_player_lookup(export_root)
     transactions = iter_transactions(export_root)
+    transactions_by_season_id = {
+        (int(tx["_season"]), str(tx["id"])): tx
+        for tx in transactions
+        if tx.get("id") is not None
+    }
 
     trade_accept_status_counts: Counter[str] = Counter()
     for tx in transactions:
@@ -334,6 +373,7 @@ def build_trade_grade_rows(
             final_week=final_periods.get(int(tx["_season"]), 17),
             players=players,
             include_trade_week=include_trade_week,
+            transactions_by_season_id=transactions_by_season_id,
         )
         for tx in completed
     ]
@@ -343,6 +383,7 @@ def build_trade_grade_rows(
     ungraded_reasons = Counter(
         row["ungraded_reason"] for row in rows if row.get("ungraded_reason")
     )
+    trade_item_sources = Counter(row["trade_item_source"] for row in rows)
     by_season: dict[str, dict[str, int]] = {}
     for row in rows:
         season = str(row["season"])
@@ -369,6 +410,7 @@ def build_trade_grade_rows(
         "completed_trade_accept_rows": len(rows),
         "graded_rows": status_counts.get("graded", 0),
         "ungraded_rows": len(rows) - status_counts.get("graded", 0),
+        "trade_item_sources": dict(trade_item_sources),
         "canonical_graded_trade_groups": len(
             {
                 row["canonical_trade_key"]
@@ -441,6 +483,14 @@ def csv_row(row: dict[str, Any]) -> dict[str, Any]:
         "score_start_week": row["score_start_week"],
         "score_end_week": row["score_end_week"],
         "trade_date_utc": row["trade_date_utc"],
+        "raw_item_count": row["raw_item_count"],
+        "trade_item_count": row["trade_item_count"],
+        "receiving_team_count": row["receiving_team_count"],
+        "trade_item_source": row["trade_item_source"],
+        "trade_item_source_transaction_id": row["trade_item_source_transaction_id"],
+        "trade_item_source_type": row["trade_item_source_type"],
+        "trade_item_source_status": row["trade_item_source_status"],
+        "trade_item_source_raw_item_count": row["trade_item_source_raw_item_count"],
         "grade_status": row["grade_status"],
         "ungraded_reason": row["ungraded_reason"],
         "canonical_group_size": row.get("canonical_group_size"),
@@ -472,6 +522,14 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "score_start_week",
         "score_end_week",
         "trade_date_utc",
+        "raw_item_count",
+        "trade_item_count",
+        "receiving_team_count",
+        "trade_item_source",
+        "trade_item_source_transaction_id",
+        "trade_item_source_type",
+        "trade_item_source_status",
+        "trade_item_source_raw_item_count",
         "grade_status",
         "ungraded_reason",
         "canonical_group_size",
@@ -491,7 +549,7 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "winner_team_name",
     ]
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(csv_rows)
 

@@ -77,3 +77,12 @@ The grader filters to `TRADE_ACCEPT` transactions with `status == EXECUTED`.
 By default it scores each side from the week after the trade scoring period
 through the end of that season. Pass `--include-trade-week` to count the trade
 week itself.
+
+The raw export currently has 279 `TRADE_ACCEPT` rows, but only 95 of those rows
+have `status == EXECUTED`. The grader keeps that strict filter. Of the 95
+executed accept rows, 70 have enough two-sided player movement data to grade:
+64 directly from the accept transaction's `items` array and 6 recovered from
+the linked `relatedTransactionId` transaction's `items` array. The remaining 25
+rows are preserved as ungraded because ESPN's exported transaction data does
+not include two-sided player trade items for them. The 70 graded rows collapse
+to 51 canonical trade events after duplicate/mirror transaction rows are grouped.

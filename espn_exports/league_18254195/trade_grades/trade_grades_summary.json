@@ -1,9 +1,9 @@
 {
   "by_season": {
     "2020": {
-      "graded": 33,
+      "graded": 39,
       "total": 64,
-      "ungraded": 31
+      "ungraded": 25
     },
     "2021": {
       "graded": 10,
@@ -32,7 +32,7 @@
     }
   },
   "canonical_graded_trade_groups": 51,
-  "canonical_groups_with_multiple_rows": 8,
+  "canonical_groups_with_multiple_rows": 11,
   "completed_trade_accept_rows": 95,
   "filter": {
     "include_trade_week": false,
@@ -40,7 +40,7 @@
     "transaction_status": "EXECUTED",
     "transaction_type": "TRADE_ACCEPT"
   },
-  "generated_at": "2026-06-22T21:24:58.015673+00:00",
+  "generated_at": "2026-06-22T21:30:13.302470+00:00",
   "grade_thresholds": [
     {
       "grade": "A+",
@@ -75,14 +75,18 @@
       "net_points_less_or_equal_to": -40
     }
   ],
-  "graded_rows": 64,
+  "graded_rows": 70,
   "trade_accept_status_counts": {
     "CANCELED": 4,
     "EXECUTED": 95,
     "UNKNOWN": 180
   },
-  "ungraded_reasons": {
-    "expected 2 receiving teams, found 0 from 0 TRADE items": 31
+  "trade_item_sources": {
+    "accept_transaction": 89,
+    "related_transaction": 6
   },
-  "ungraded_rows": 31
+  "ungraded_reasons": {
+    "expected 2 receiving teams, found 0 from 0 TRADE items": 25
+  },
+  "ungraded_rows": 25
 }
