@@ -50,3 +50,30 @@ Important files:
 - `player_weekly_points_flat.json` is a row-oriented version for easy import into pandas/Sheets/databases.
 - `trade_player_coverage.json` reports whether traded players have names and weekly points available.
 - `lookup_summary.json` contains counts and validation details.
+
+## Build Trade Grades
+
+After the player lookup exists, build the completed-trade grading table:
+
+```bash
+python3 build_trade_grades.py
+```
+
+Outputs are written to:
+
+```text
+espn_exports/league_18254195/trade_grades/
+```
+
+Important files:
+
+- `trade_grades.csv` is the table-shaped export.
+- `trade_grades_table.json` is the same row-oriented table in JSON.
+- `trade_grades.json` keeps nested player details for each side of each trade.
+- `trade_grades_summary.json` records filter counts and ungraded rows.
+- `trade_grades_sample.json` contains the sample trades printed by the script.
+
+The grader filters to `TRADE_ACCEPT` transactions with `status == EXECUTED`.
+By default it scores each side from the week after the trade scoring period
+through the end of that season. Pass `--include-trade-week` to count the trade
+week itself.

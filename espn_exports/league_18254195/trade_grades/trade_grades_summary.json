@@ -1,0 +1,88 @@
+{
+  "by_season": {
+    "2020": {
+      "graded": 33,
+      "total": 64,
+      "ungraded": 31
+    },
+    "2021": {
+      "graded": 10,
+      "total": 10,
+      "ungraded": 0
+    },
+    "2022": {
+      "graded": 9,
+      "total": 9,
+      "ungraded": 0
+    },
+    "2023": {
+      "graded": 6,
+      "total": 6,
+      "ungraded": 0
+    },
+    "2024": {
+      "graded": 2,
+      "total": 2,
+      "ungraded": 0
+    },
+    "2025": {
+      "graded": 4,
+      "total": 4,
+      "ungraded": 0
+    }
+  },
+  "canonical_graded_trade_groups": 51,
+  "canonical_groups_with_multiple_rows": 8,
+  "completed_trade_accept_rows": 95,
+  "filter": {
+    "include_trade_week": false,
+    "score_rule": "sum player weekly points from the week after the trade week through season end",
+    "transaction_status": "EXECUTED",
+    "transaction_type": "TRADE_ACCEPT"
+  },
+  "generated_at": "2026-06-22T21:24:58.015673+00:00",
+  "grade_thresholds": [
+    {
+      "grade": "A+",
+      "net_points_greater_than": 60
+    },
+    {
+      "grade": "A",
+      "net_points_greater_than": 40
+    },
+    {
+      "grade": "B+",
+      "net_points_greater_than": 25
+    },
+    {
+      "grade": "B",
+      "net_points_greater_than": 10
+    },
+    {
+      "grade": "C",
+      "net_points_greater_than": -10
+    },
+    {
+      "grade": "D",
+      "net_points_greater_than": -25
+    },
+    {
+      "grade": "D-",
+      "net_points_greater_than": -40
+    },
+    {
+      "grade": "F",
+      "net_points_less_or_equal_to": -40
+    }
+  ],
+  "graded_rows": 64,
+  "trade_accept_status_counts": {
+    "CANCELED": 4,
+    "EXECUTED": 95,
+    "UNKNOWN": 180
+  },
+  "ungraded_reasons": {
+    "expected 2 receiving teams, found 0 from 0 TRADE items": 31
+  },
+  "ungraded_rows": 31
+}
