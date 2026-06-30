@@ -1,0 +1,53 @@
+[project]
+name = "mygm-api"
+version = "0.1.0"
+description = "FastAPI backend for the MyGM ESPN private alpha."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "cryptography>=42.0.0",
+    "fastapi>=0.128.0",
+    "orjson>=3.10.0",
+    "pydantic>=2.8.0",
+    "pydantic-settings>=2.4.0",
+    "uvicorn[standard]>=0.30.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "basedpyright>=1.31.0",
+    "httpx>=0.27.0",
+    "pytest>=8.3.0",
+    "ruff>=0.6.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q -p no:capture"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "PLR0913",  # FastAPI route handlers take many injected dependencies + query params
+    "PLR2004",  # magic values are fine in test assertions
+    "S101",
+]
+
+[tool.basedpyright]
+typeCheckingMode = "all"
+pythonVersion = "3.12"
+include = ["src"]

@@ -1,0 +1,1286 @@
+.workspace-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+.workspace-copy,
+.workspace-panel,
+.split-workbench,
+.insight-card,
+.action-card {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-control);
+  background: var(--surface-secondary);
+}
+
+.workspace-copy,
+.workspace-panel,
+.split-workbench {
+  padding: 18px;
+}
+
+.workspace-copy h2,
+.split-workbench h2 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.workspace-copy p,
+.workspace-panel p,
+.split-workbench p,
+.action-card span,
+.progress-row p,
+.insight-card p {
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.workspace-copy p {
+  max-width: 70ch;
+}
+
+.insight-deck {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.insight-card {
+  display: grid;
+  gap: 8px;
+  min-height: 138px;
+  padding: 16px;
+}
+
+.insight-card.success {
+  background: color-mix(in srgb, var(--status-success) 6%, var(--surface-secondary));
+}
+
+.insight-card.warning {
+  background: color-mix(in srgb, var(--status-warning) 6%, var(--surface-secondary));
+}
+
+.insight-card.info {
+  background: color-mix(in srgb, var(--status-info) 6%, var(--surface-secondary));
+}
+
+.insight-label,
+.section-kicker {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.insight-card strong {
+  font-size: 26px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.split-workbench {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.42fr);
+  gap: 18px;
+}
+
+.split-workbench aside {
+  border-left: 1px solid var(--border-subtle);
+  padding-left: 18px;
+}
+
+.progress-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.progress-row {
+  display: grid;
+  gap: 8px;
+}
+
+.progress-row div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.progress-row span {
+  color: var(--text-secondary);
+  font-weight: 700;
+}
+
+.progress-row strong {
+  font-variant-numeric: tabular-nums;
+}
+
+.progress-row meter {
+  width: 100%;
+  height: 10px;
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.action-card {
+  display: grid;
+  gap: 8px;
+  min-height: 112px;
+  padding: 14px;
+}
+
+.action-card:hover {
+  border-color: color-mix(in srgb, var(--accent-primary) 38%, var(--border-subtle));
+  transform: translateY(-1px);
+}
+
+.detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.detail-table th,
+.detail-table td {
+  border-top: 1px solid var(--border-subtle);
+  padding: 11px 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.detail-table th {
+  width: 34%;
+  color: var(--text-secondary);
+  font-weight: 750;
+}
+
+.detail-table td {
+  color: var(--text-primary);
+}
+
+.component-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.component-list li {
+  display: grid;
+  gap: 3px;
+}
+
+.component-list span {
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.component-list strong {
+  font-variant-numeric: tabular-nums;
+}
+
+.component-list p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.component-list .plain-list {
+  margin-top: 4px;
+}
+
+@media (max-width: 960px) {
+  .workspace-hero,
+  .split-workbench,
+  .insight-deck,
+  .action-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .split-workbench aside {
+    border-left: 0;
+    border-top: 1px solid var(--border-subtle);
+    padding-left: 0;
+    padding-top: 18px;
+  }
+}
+
+@media (max-width: 680px) {
+  .workspace-hero,
+  .split-workbench,
+  .insight-deck,
+  .action-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   2K / MyGM-Menu primitives — emblem, player image/chip, OVR
+   ring, segmented meter — shared across every showcase surface.
+   ============================================================ */
+
+/* ---- Team emblem (logo on a dark angular plinth, monogram fallback) ---- */
+.team-emblem {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  flex: none;
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: linear-gradient(135deg, rgba(46, 123, 255, 0.35), rgba(91, 43, 217, 0.3));
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.team-emblem--you {
+  background: linear-gradient(135deg, rgba(255, 230, 0, 0.45), rgba(255, 154, 60, 0.4));
+  color: var(--ink);
+}
+
+.team-emblem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-emblem__monogram {
+  line-height: 1;
+}
+
+/* ---- Player image (headshot / D-ST team logo / silhouette) ---- */
+.player-image {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  flex: none;
+  border-radius: 50%;
+  background: var(--surface-inset);
+  border: 1px solid var(--border-subtle);
+}
+
+.player-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.player-image--dst img {
+  object-fit: contain;
+  padding: 14%;
+}
+
+.player-image__silhouette {
+  width: 70%;
+  height: 70%;
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+/* ---- Player chip (headshot + NAME + TEAM POS) ---- */
+.player-chip-2k {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.player-chip-2k__id {
+  display: grid;
+  gap: 1px;
+  min-width: 0;
+}
+
+.player-chip-2k__name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  font-weight: 700;
+  font-size: 13.5px;
+  color: var(--text-primary);
+}
+
+.player-chip-2k__name-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+/* Career signature pill — color carried inline via playerBadgeStyle(). */
+.player-chip-2k__badge {
+  flex: none;
+  font-family: var(--font-tech, var(--font-num));
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  padding: 2px 4px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  background: color-mix(in srgb, currentColor 14%, transparent);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.player-chip-2k__sub {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-tech);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.player-chip-2k__team {
+  color: var(--text-muted);
+}
+
+/* Position reads in its fantasy-position accent (set inline via positionColor). */
+.player-chip-2k__pos {
+  font-weight: 800;
+}
+
+.player-chip-2k__trailing {
+  margin-left: auto;
+  font-family: var(--font-num);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--brand-strong);
+  white-space: nowrap;
+}
+
+/* ---- OVR ring ---- */
+.ovr-ring {
+  position: relative;
+  display: grid;
+  place-items: center;
+  flex: none;
+}
+
+.ovr-ring__arc {
+  transition: stroke-dashoffset 1.1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.ovr-ring__center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ovr-ring__label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.28em;
+  padding-left: 0.28em;
+  color: var(--text-secondary);
+}
+
+.ovr-ring__num {
+  font-family: var(--font-app);
+  font-weight: 900;
+  font-size: 1.05em;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.ovr-ring--unrated {
+  opacity: 0.78;
+}
+
+.ovr-ring__unrated {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.62em;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* ---- Segmented attribute meter ---- */
+.seg-meter {
+  display: flex;
+  gap: 3px;
+  height: 13px;
+  min-width: 0;
+}
+
+.seg-meter--mini {
+  height: 7px;
+  gap: 2px;
+}
+
+.seg-meter__cell {
+  flex: 1;
+  min-width: 5px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 2px;
+  /* Forward chevron/arrow (▶) — the deliberate 2K angular accent. */
+  clip-path: polygon(0 0, 70% 0, 100% 50%, 70% 100%, 0 100%);
+  transition:
+    background 0.4s ease,
+    box-shadow 0.4s ease,
+    opacity 0.4s ease;
+  opacity: 0.9;
+}
+
+.seg-meter__cell.is-on {
+  background: hsl(var(--seg-hue, 0) 78% 50%);
+  box-shadow: 0 0 7px hsl(var(--seg-hue, 0) 78% 50% / 0.45);
+  opacity: 1;
+}
+
+/* ============================================================
+   GM Ratings — flagship hero + OVR-ring rows (decision 1 / §5)
+   ============================================================ */
+
+.gm-board {
+  display: grid;
+  gap: 18px;
+}
+
+/* ---- Hero ---- */
+.gm-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(120deg, rgba(20, 29, 49, 0.92), rgba(13, 19, 34, 0.92));
+  border: 1px solid var(--line);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 26px), calc(100% - 26px) 100%, 0 100%);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.gm-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(120deg, rgba(46, 123, 255, 0.2) 0%, transparent 38%),
+    radial-gradient(80% 120% at 100% 0%, rgba(224, 36, 154, 0.2), transparent 55%);
+}
+
+.gm-hero__tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  color: var(--ink);
+  background: var(--yellow);
+  padding: 6px 18px 6px 14px;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 14px) 100%, 0 100%);
+  box-shadow: 0 0 18px rgba(255, 230, 0, 0.4);
+}
+
+.gm-hero__grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: auto 1fr 1.1fr;
+  gap: 30px;
+  align-items: center;
+  padding: 36px 34px 30px;
+}
+
+.gm-hero__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  min-width: 190px;
+}
+
+.gm-hero__tier {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  padding: 5px 16px;
+  text-transform: uppercase;
+  clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+  color: var(--ink);
+}
+
+.gm-hero__mid {
+  min-width: 0;
+}
+
+.gm-hero__mid h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 0.95;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.gm-hero__role {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0 4px;
+  font-family: var(--font-tech);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  color: var(--yellow);
+}
+
+.gm-hero__team {
+  font-weight: 600;
+  font-size: 17px;
+  color: #cfe0ff;
+  margin-bottom: 16px;
+}
+
+/* Archetype ("GM DNA") block on the hero — badge + one-line scouting note. */
+.gm-hero__dna {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.gm-hero__dna-badge {
+  align-self: flex-start;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 3px 11px;
+  border-radius: 999px;
+  color: var(--ink);
+}
+
+.gm-hero__dna-line {
+  max-width: 46ch;
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: #cfe0ff;
+}
+
+.gm-hero__sig {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+}
+
+.gm-hero__sig-meta {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.gm-hero__sig-k {
+  font-family: var(--font-tech);
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.gm-hero__sig-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.gm-hero__sig-sub {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.gm-hero__right {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  min-width: 0;
+}
+
+.gm-hero__attr-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.attr-2k {
+  display: grid;
+  grid-template-columns: 120px 1fr 42px;
+  align-items: center;
+  gap: 12px;
+}
+
+.attr-2k__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 12.5px;
+  letter-spacing: 0.06em;
+  color: #dce6fb;
+  text-transform: uppercase;
+}
+
+.attr-2k__val {
+  font-family: var(--font-app);
+  font-weight: 800;
+  font-size: 16px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.gm-hero__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin-top: 4px;
+  padding: 9px 18px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--yellow);
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  box-shadow: 0 0 18px rgba(255, 230, 0, 0.3);
+}
+
+.gm-hero__cta:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+/* ---- Rows ---- */
+.gm-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gm-row {
+  position: relative;
+  cursor: pointer;
+  appearance: none;
+  width: 100%;
+  display: block;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  transform: skewX(-9deg);
+  background: linear-gradient(120deg, rgba(18, 26, 43, 0.82), rgba(13, 19, 34, 0.82));
+  border: 1px solid var(--line);
+  border-left: 3px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 18px;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease;
+}
+
+.gm-row__inner {
+  display: grid;
+  grid-template-columns: 40px 56px 44px minmax(0, 1fr) minmax(0, 360px) auto;
+  gap: 16px;
+  align-items: center;
+  transform: skewX(9deg);
+}
+
+.gm-row:hover {
+  background: linear-gradient(120deg, rgba(30, 44, 74, 0.92), rgba(16, 23, 40, 0.9));
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  z-index: 2;
+}
+
+.gm-row.is-selected {
+  background: linear-gradient(120deg, #fff, #eef3ff);
+  border-color: #fff;
+  box-shadow: 0 12px 34px rgba(120, 170, 255, 0.35);
+}
+
+.gm-row.is-selected::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--yellow);
+  box-shadow: 0 0 14px rgba(255, 230, 0, 0.8);
+}
+
+.gm-row.is-you {
+  border-left-color: var(--yellow);
+  box-shadow:
+    0 0 0 1px rgba(255, 230, 0, 0.25),
+    0 0 26px rgba(255, 230, 0, 0.12);
+}
+
+.gm-row__rank {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 1;
+  color: var(--text-secondary);
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.gm-row__rank small {
+  display: block;
+  font-size: 8.5px;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.gm-row__id {
+  min-width: 0;
+}
+
+.gm-row__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.gm-row__sub {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+  min-width: 0;
+}
+
+.gm-row__tier {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  padding: 2px 7px;
+  color: var(--ink);
+  clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%);
+}
+
+/* Archetype ("GM DNA") pill — rounded so it reads as a different chip category
+   than the angled tier badge it sits beside. Fill color comes from TierBadge. */
+.gm-row__archetype {
+  clip-path: none;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 8.5px;
+  flex: none;
+}
+
+.gm-row__team {
+  font-weight: 600;
+  font-size: 12.5px;
+  color: var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.gm-row__micros {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+
+.gm-row__micro {
+  display: grid;
+  grid-template-columns: 54px 1fr 26px;
+  gap: 8px;
+  align-items: center;
+}
+
+.gm-row__micro-k {
+  font-family: var(--font-tech);
+  font-size: 8.5px;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.gm-row__micro-v {
+  font-family: var(--font-app);
+  font-weight: 700;
+  font-size: 11px;
+  text-align: right;
+  color: #dce6fb;
+  font-variant-numeric: tabular-nums;
+}
+
+.gm-row__stats {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.gm-row__stat {
+  text-align: center;
+}
+
+.gm-row__stat-k {
+  font-family: var(--font-tech);
+  font-size: 8.5px;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.gm-row__stat-v {
+  font-family: var(--font-app);
+  font-weight: 800;
+  font-size: 15px;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Selected/you state overrides — placed after base child rules so the higher
+   specificity also wins in source order (biome noDescendingSpecificity). */
+.gm-row.is-selected .gm-row__name,
+.gm-row.is-selected .gm-row__rank,
+.gm-row.is-selected .gm-row__stat-v {
+  color: var(--ink);
+}
+
+.gm-row.is-selected .gm-row__team {
+  color: #33445e;
+}
+
+.gm-row.is-you .gm-row__inner::after {
+  content: "YOU";
+  position: absolute;
+  right: 14px;
+  top: -6px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  color: var(--ink);
+  background: var(--yellow);
+  padding: 2px 7px;
+  clip-path: polygon(6px 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@media (max-width: 1100px) {
+  .gm-hero__grid {
+    grid-template-columns: auto 1fr;
+  }
+  .gm-hero__right {
+    grid-column: 1 / -1;
+  }
+  .gm-row__inner {
+    grid-template-columns: 34px 50px minmax(0, 1fr) auto;
+  }
+  .gm-row__emblem,
+  .gm-row__micros {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .gm-hero__grid {
+    grid-template-columns: 1fr;
+    padding: 28px 18px 22px;
+  }
+  .gm-hero__left {
+    min-width: 0;
+  }
+  .attr-2k {
+    grid-template-columns: 96px 1fr 38px;
+  }
+  .gm-row__inner {
+    grid-template-columns: 28px 44px minmax(0, 1fr);
+  }
+  .gm-row__stats {
+    display: none;
+  }
+}
+
+/* Compact preview rows (Home leaderboard column): drop emblem + micros so the
+   manager name keeps full width in a narrow container, regardless of viewport.
+   Placed after the responsive rules so the higher-specificity descendant
+   selectors also win in source order (biome noDescendingSpecificity). */
+.gm-row--compact .gm-row__inner {
+  grid-template-columns: 40px 56px minmax(0, 1fr) auto;
+}
+
+.gm-row--compact .gm-row__emblem,
+.gm-row--compact .gm-row__micros {
+  display: none;
+}
+
+/* ---- Surface tweaks for emblem/chip wiring ---- */
+.record-card__holder {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.record-card .player-chip-2k {
+  margin: 2px 0;
+}
+
+.player-board__row {
+  min-height: 48px;
+}
+
+/* Manager emblem inside trade/waiver/standings rows */
+.move-manager,
+.trade-side__manager .who,
+.standings-row__name,
+.nemesis-row__name {
+  min-width: 0;
+}
+
+/* ---- Franchise hub header (emblem + logo-history strip + signature) ---- */
+.franchise-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 16px;
+}
+
+.franchise-header__main {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+}
+
+.franchise-header__id {
+  min-width: 0;
+}
+
+.franchise-header__id h1 {
+  margin: 2px 0 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  line-height: 1.05;
+}
+
+/* Archetype ("GM DNA") headline under the franchise name. */
+.franchise-archetype {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 8px 0 2px;
+}
+
+.franchise-archetype__badge {
+  align-self: flex-start;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 3px 11px;
+  border-radius: 999px;
+  color: var(--ink);
+  background: var(--arch, var(--tier-low));
+}
+
+.franchise-archetype__line {
+  margin: 0;
+  max-width: 56ch;
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+/* Archetype ("GM DNA") headline on the manager report card (/gms profile). */
+.report-archetype {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: -6px 0 4px;
+}
+
+.report-archetype__badge {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 999px;
+  color: var(--ink);
+  background: var(--arch, var(--tier-low));
+}
+
+.report-archetype__line {
+  margin: 0;
+  max-width: 64ch;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+.logo-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.logo-strip__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.logo-strip__yr {
+  font-family: var(--font-tech);
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.franchise-header__sig {
+  flex: none;
+}
+
+/* ---- History landing hero + ambient marquee ---- */
+.history-hero__grid {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 30px 32px 28px;
+}
+
+.history-hero__id {
+  min-width: 0;
+}
+
+.gm-hero__champ {
+  margin: 4px 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 0.95;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.history-milestone__champ {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ---- Season champion hero (champion + runner-up as a moment) ---- */
+.season-hero__grid {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 30px 32px 28px;
+}
+
+.season-hero__champ {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-width: 0;
+}
+
+.season-hero__runner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+}
+
+.season-hero__runner-id {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.season-hero__runner-meta {
+  display: grid;
+  gap: 1px;
+  min-width: 0;
+}
+
+.season-hero__runner-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.season-hero__runner-meta small {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+/* Reigning-GM marquee — ambient (landing/dashboard only), reduced-motion safe. */
+.marquee {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  backdrop-filter: blur(8px);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+  animation: marquee-scroll 32s linear infinite;
+}
+
+.marquee__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 22px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.marquee__dot {
+  color: var(--yellow);
+  font-size: 9px;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track {
+    animation: none;
+  }
+}
+
+/* ---- Ambient animated gradient wash (landing + dashboard only, §8) ---- */
+.ambient-wash {
+  position: fixed;
+  inset: -30%;
+  z-index: -2;
+  pointer-events: none;
+  opacity: 0.55;
+  background:
+    radial-gradient(40% 50% at 20% 30%, rgba(46, 123, 255, 0.4), transparent 60%),
+    radial-gradient(40% 50% at 82% 22%, rgba(224, 36, 154, 0.34), transparent 60%),
+    radial-gradient(45% 55% at 70% 85%, rgba(91, 43, 217, 0.4), transparent 60%);
+  filter: saturate(1.15);
+  animation: ambient-drift 26s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes ambient-drift {
+  from {
+    transform: translate3d(-2%, -1.5%, 0) scale(1.04);
+  }
+  to {
+    transform: translate3d(2.5%, 1.5%, 0) scale(1.12);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-wash {
+    animation: none;
+  }
+}
+
+/* ---- Public share card hero (calm tier, privacy-safe) ---- */
+.share-hero {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 18px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+}
+
+.share-hero__sub {
+  margin: 4px 0 0;
+  color: var(--text-secondary);
+}
+
+/* logo-strip as a semantic list */
+.logo-strip {
+  list-style: none;
+  padding: 0;
+}

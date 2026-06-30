@@ -1,0 +1,79 @@
+.app-frame {
+  min-height: 100dvh;
+  background: var(--surface-primary);
+}
+
+.topbar {
+  display: flex;
+  min-height: 56px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--surface-secondary);
+  padding: 0 24px;
+}
+
+.brand-lockup,
+.topbar nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.topbar nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  color: var(--text-secondary);
+}
+
+.page-shell {
+  width: min(1280px, 100%);
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.status-pill {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 6px;
+  border-radius: var(--radius-control);
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.status-pill.success {
+  background: color-mix(in srgb, var(--status-success) 10%, var(--surface-secondary));
+  color: var(--status-success);
+}
+
+.status-pill.warning {
+  background: color-mix(in srgb, var(--status-warning) 10%, var(--surface-secondary));
+  color: var(--status-warning);
+}
+
+.status-pill.error {
+  background: color-mix(in srgb, var(--status-error) 10%, var(--surface-secondary));
+  color: var(--status-error);
+}
+
+.status-pill.info {
+  background: color-mix(in srgb, var(--status-info) 10%, var(--surface-secondary));
+  color: var(--status-info);
+}
+
+@media (max-width: 680px) {
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 14px 16px;
+  }
+
+  .page-shell {
+    padding: 20px 16px;
+  }
+}

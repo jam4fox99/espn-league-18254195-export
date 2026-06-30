@@ -1,0 +1,18 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "builds": [
+    {
+      "src": "src/asgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "includeFiles": "src/mygm_api/demo_snapshot.json"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "src/asgi.py"
+    }
+  ]
+}

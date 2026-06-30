@@ -1,0 +1,2385 @@
+{
+  "acquisition_analytics": {
+    "counted_rows": 2254,
+    "excluded_rows": 1645,
+    "exclusion_reasons": {
+      "status:CANCELED": 360,
+      "status:FAILED_INVALIDPLAYERSOURCE": 810,
+      "status:FAILED_PLAYERALREADYDROPPED": 212,
+      "status:FAILED_POSITIONLIMIT": 7,
+      "status:FAILED_ROSTERLIMIT": 121,
+      "status:FAILED_TRADE_RESERVED": 3,
+      "status:PENDING": 132
+    },
+    "faab_warning": "FAAB context unavailable: bidAmount is always 0",
+    "gross_rows": 462,
+    "net_rows": 1792,
+    "status_counts": {
+      "CANCELED": 360,
+      "EXECUTED": 2254,
+      "FAILED_INVALIDPLAYERSOURCE": 810,
+      "FAILED_PLAYERALREADYDROPPED": 212,
+      "FAILED_POSITIONLIMIT": 7,
+      "FAILED_ROSTERLIMIT": 121,
+      "FAILED_TRADE_RESERVED": 3,
+      "PENDING": 132
+    },
+    "total_rows": 3899,
+    "type_counts": {
+      "FREEAGENT": 1237,
+      "WAIVER": 2662
+    }
+  },
+  "career_excluded_seasons": [
+    2026
+  ],
+  "career_included_seasons": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "data_quality_warnings": [
+    "retrospective value captured, not ex-ante decision quality",
+    "FAAB context unavailable: bidAmount is always 0",
+    "1645 acquisition rows excluded with reason",
+    "2026 excluded from career ratings by default"
+  ],
+  "formula_version": "mygm-retrospective-v1",
+  "gm_ratings": [
+    {
+      "confidence": "medium",
+      "final_score": 63.9855,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{57834E28-C9FC-47AB-834E-28C9FC37AB2B}",
+      "normalized_components": {
+        "luckAdjusted": 44.4444,
+        "recordAndPoints": 21.5385,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 44.4444,
+        "recordAndPoints": 21.5385,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2020,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 72.4813,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{66937352-9B33-40B8-AF5B-C75D821EF507}",
+      "normalized_components": {
+        "luckAdjusted": 55.5556,
+        "recordAndPoints": 58.4616,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 55.5556,
+        "recordAndPoints": 58.4616,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2020,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 63.4214,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{4EE7DEB2-326D-4C66-A503-A84341D1AA39}",
+      "normalized_components": {
+        "luckAdjusted": 11.1111,
+        "recordAndPoints": 35.3846,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 11.1111,
+        "recordAndPoints": 35.3846,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2020,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 68.1565,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{69B55CFD-5402-41D6-B55C-FD540261D6C4}",
+      "normalized_components": {
+        "luckAdjusted": 66.6667,
+        "recordAndPoints": 31.282,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 66.6667,
+        "recordAndPoints": 31.282,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2020,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 64.3616,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{AAA799D7-F3F8-48C7-A799-D7F3F8B8C720}",
+      "normalized_components": {
+        "luckAdjusted": 0.0,
+        "recordAndPoints": 45.6411,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 0.0,
+        "recordAndPoints": 45.6411,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2020,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 82.7719,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{DAF4A167-6427-4D4C-9822-1D1988E5D480}",
+      "normalized_components": {
+        "luckAdjusted": 100.0,
+        "recordAndPoints": 87.6923,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 100.0,
+        "recordAndPoints": 87.6923,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2020,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 69.8659,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{FA38E2A0-FE4A-4BB8-B525-FE090DDB1DA9}",
+      "normalized_components": {
+        "luckAdjusted": 22.2222,
+        "recordAndPoints": 62.0513,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 22.2222,
+        "recordAndPoints": 62.0513,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2020,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 79.712,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{F0FA6DE4-53C5-47B3-BDD2-B0D5468ADDFB}",
+      "normalized_components": {
+        "luckAdjusted": 88.8889,
+        "recordAndPoints": 77.9487,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 88.8889,
+        "recordAndPoints": 77.9487,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2020,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 73.2676,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{421AC22C-94A5-4561-B4CB-67C112F38645}",
+      "normalized_components": {
+        "luckAdjusted": 77.7778,
+        "recordAndPoints": 51.282,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 77.7778,
+        "recordAndPoints": 51.282,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2020,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 64.3103,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{B26EFF10-1B2E-4495-B87A-998757F98DD4}",
+      "normalized_components": {
+        "luckAdjusted": 33.3333,
+        "recordAndPoints": 28.7179,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 33.3333,
+        "recordAndPoints": 28.7179,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2020,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 81.8048,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{57834E28-C9FC-47AB-834E-28C9FC37AB2B}",
+      "normalized_components": {
+        "luckAdjusted": 100.0,
+        "recordAndPoints": 82.8571,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 100.0,
+        "recordAndPoints": 82.8571,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2021,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 71.4556,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{66937352-9B33-40B8-AF5B-C75D821EF507}",
+      "normalized_components": {
+        "luckAdjusted": 55.5556,
+        "recordAndPoints": 53.3334,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 55.5556,
+        "recordAndPoints": 53.3334,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2021,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 62.789,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{4EE7DEB2-326D-4C66-A503-A84341D1AA39}",
+      "normalized_components": {
+        "luckAdjusted": 22.2222,
+        "recordAndPoints": 26.6667,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 22.2222,
+        "recordAndPoints": 26.6667,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2021,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 56.9477,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{CA6D383B-6C1F-4BDE-8D68-B09F4DCF9CBE}",
+      "normalized_components": {
+        "luckAdjusted": 0.0,
+        "recordAndPoints": 8.5714,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 0.0,
+        "recordAndPoints": 8.5714,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2021,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 67.7731,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{AAA799D7-F3F8-48C7-A799-D7F3F8B8C720}",
+      "normalized_components": {
+        "luckAdjusted": 11.1111,
+        "recordAndPoints": 57.1429,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 11.1111,
+        "recordAndPoints": 57.1429,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2021,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 79.3921,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{DAF4A167-6427-4D4C-9822-1D1988E5D480}",
+      "normalized_components": {
+        "luckAdjusted": 77.7778,
+        "recordAndPoints": 81.9048,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 77.7778,
+        "recordAndPoints": 81.9048,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2021,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 78.5985,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{FA38E2A0-FE4A-4BB8-B525-FE090DDB1DA9}",
+      "normalized_components": {
+        "luckAdjusted": 88.8889,
+        "recordAndPoints": 72.381,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 88.8889,
+        "recordAndPoints": 72.381,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2021,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 69.3286,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{F0FA6DE4-53C5-47B3-BDD2-B0D5468ADDFB}",
+      "normalized_components": {
+        "luckAdjusted": 66.6667,
+        "recordAndPoints": 37.1428,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 66.6667,
+        "recordAndPoints": 37.1428,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2021,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 65.2334,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{93DF645F-8A43-4C8A-ADC8-36D95891FADC}",
+      "normalized_components": {
+        "luckAdjusted": 33.3333,
+        "recordAndPoints": 33.3333,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 33.3333,
+        "recordAndPoints": 33.3333,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2021,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 69.0112,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{B26EFF10-1B2E-4495-B87A-998757F98DD4}",
+      "normalized_components": {
+        "luckAdjusted": 44.4444,
+        "recordAndPoints": 46.6666,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 44.4444,
+        "recordAndPoints": 46.6666,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2021,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 73.1382,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{57834E28-C9FC-47AB-834E-28C9FC37AB2B}",
+      "normalized_components": {
+        "luckAdjusted": 66.6667,
+        "recordAndPoints": 56.1905,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 66.6667,
+        "recordAndPoints": 56.1905,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2022,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 73.5826,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{66937352-9B33-40B8-AF5B-C75D821EF507}",
+      "normalized_components": {
+        "luckAdjusted": 44.4444,
+        "recordAndPoints": 69.5238,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 44.4444,
+        "recordAndPoints": 69.5238,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2022,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 70.0271,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{4EE7DEB2-326D-4C66-A503-A84341D1AA39}",
+      "normalized_components": {
+        "luckAdjusted": 22.2222,
+        "recordAndPoints": 62.8572,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 22.2222,
+        "recordAndPoints": 62.8572,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2022,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 68.789,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{4F8022C8-6199-4013-9A8D-E2F26D5BD06C}",
+      "normalized_components": {
+        "luckAdjusted": 55.5556,
+        "recordAndPoints": 40.0,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 55.5556,
+        "recordAndPoints": 40.0,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2022,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 56.3763,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{AAA799D7-F3F8-48C7-A799-D7F3F8B8C720}",
+      "normalized_components": {
+        "luckAdjusted": 0.0,
+        "recordAndPoints": 5.7143,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 0.0,
+        "recordAndPoints": 5.7143,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2022,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 60.535,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{DAF4A167-6427-4D4C-9822-1D1988E5D480}",
+      "normalized_components": {
+        "luckAdjusted": 11.1111,
+        "recordAndPoints": 20.9524,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 11.1111,
+        "recordAndPoints": 20.9524,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2022,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 72.9159,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{FA38E2A0-FE4A-4BB8-B525-FE090DDB1DA9}",
+      "normalized_components": {
+        "luckAdjusted": 77.7778,
+        "recordAndPoints": 49.5238,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 77.7778,
+        "recordAndPoints": 49.5238,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2022,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 64.0905,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{F0FA6DE4-53C5-47B3-BDD2-B0D5468ADDFB}",
+      "normalized_components": {
+        "luckAdjusted": 33.3333,
+        "recordAndPoints": 27.619,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 33.3333,
+        "recordAndPoints": 27.619,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2022,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 83.5191,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{B618B4FC-D3B6-4CD9-B75F-7FC4924DC93B}",
+      "normalized_components": {
+        "luckAdjusted": 100.0,
+        "recordAndPoints": 91.4286,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 100.0,
+        "recordAndPoints": 91.4286,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2022,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 79.3604,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{B26EFF10-1B2E-4495-B87A-998757F98DD4}",
+      "normalized_components": {
+        "luckAdjusted": 88.8889,
+        "recordAndPoints": 76.1905,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 88.8889,
+        "recordAndPoints": 76.1905,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2022,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 82.3763,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{57834E28-C9FC-47AB-834E-28C9FC37AB2B}",
+      "normalized_components": {
+        "luckAdjusted": 100.0,
+        "recordAndPoints": 85.7143,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 100.0,
+        "recordAndPoints": 85.7143,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2023,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 71.3286,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{66937352-9B33-40B8-AF5B-C75D821EF507}",
+      "normalized_components": {
+        "luckAdjusted": 33.3333,
+        "recordAndPoints": 63.8095,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 33.3333,
+        "recordAndPoints": 63.8095,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2023,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 75.3286,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{4EE7DEB2-326D-4C66-A503-A84341D1AA39}",
+      "normalized_components": {
+        "luckAdjusted": 66.6667,
+        "recordAndPoints": 67.1429,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 66.6667,
+        "recordAndPoints": 67.1429,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2023,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 70.6937,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{4F8022C8-6199-4013-9A8D-E2F26D5BD06C}",
+      "normalized_components": {
+        "luckAdjusted": 55.5556,
+        "recordAndPoints": 49.5238,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 55.5556,
+        "recordAndPoints": 49.5238,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2023,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 61.2969,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{5F9FE98A-9553-40DC-95D5-13E21A7206B7}",
+      "normalized_components": {
+        "luckAdjusted": 11.1111,
+        "recordAndPoints": 24.7619,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 11.1111,
+        "recordAndPoints": 24.7619,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2023,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 78.2493,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{DAF4A167-6427-4D4C-9822-1D1988E5D480}",
+      "normalized_components": {
+        "luckAdjusted": 77.7778,
+        "recordAndPoints": 76.1905,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 77.7778,
+        "recordAndPoints": 76.1905,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2023,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 58.8524,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{FA38E2A0-FE4A-4BB8-B525-FE090DDB1DA9}",
+      "normalized_components": {
+        "luckAdjusted": 0.0,
+        "recordAndPoints": 18.0952,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 0.0,
+        "recordAndPoints": 18.0952,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2023,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 60.8842,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{F0FA6DE4-53C5-47B3-BDD2-B0D5468ADDFB}",
+      "normalized_components": {
+        "luckAdjusted": 22.2222,
+        "recordAndPoints": 17.1429,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 22.2222,
+        "recordAndPoints": 17.1429,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2023,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 75.6461,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{B26EFF10-1B2E-4495-B87A-998757F98DD4}",
+      "normalized_components": {
+        "luckAdjusted": 88.8889,
+        "recordAndPoints": 57.6191,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 88.8889,
+        "recordAndPoints": 57.6191,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2023,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 67.6778,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{421AC22C-94A5-4561-B4CB-67C112F38645}",
+      "normalized_components": {
+        "luckAdjusted": 44.4444,
+        "recordAndPoints": 40.0,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 44.4444,
+        "recordAndPoints": 40.0,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2023,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 68.4397,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{57834E28-C9FC-47AB-834E-28C9FC37AB2B}",
+      "normalized_components": {
+        "luckAdjusted": 44.4444,
+        "recordAndPoints": 43.8095,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 44.4444,
+        "recordAndPoints": 43.8095,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2024,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 68.5985,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{66937352-9B33-40B8-AF5B-C75D821EF507}",
+      "normalized_components": {
+        "luckAdjusted": 55.5556,
+        "recordAndPoints": 39.0476,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 55.5556,
+        "recordAndPoints": 39.0476,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2024,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 58.662,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{4EE7DEB2-326D-4C66-A503-A84341D1AA39}",
+      "normalized_components": {
+        "luckAdjusted": 0.0,
+        "recordAndPoints": 17.1429,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 0.0,
+        "recordAndPoints": 17.1429,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2024,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 75.3921,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{4F8022C8-6199-4013-9A8D-E2F26D5BD06C}",
+      "normalized_components": {
+        "luckAdjusted": 77.7778,
+        "recordAndPoints": 61.9048,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 77.7778,
+        "recordAndPoints": 61.9048,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2024,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 73.3286,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{5F9FE98A-9553-40DC-95D5-13E21A7206B7}",
+      "normalized_components": {
+        "luckAdjusted": 66.6667,
+        "recordAndPoints": 57.1429,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 66.6667,
+        "recordAndPoints": 57.1429,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2024,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 82.0905,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{FA38E2A0-FE4A-4BB8-B525-FE090DDB1DA9}",
+      "normalized_components": {
+        "luckAdjusted": 100.0,
+        "recordAndPoints": 84.2857,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 100.0,
+        "recordAndPoints": 84.2857,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2024,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 76.5985,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{F0FA6DE4-53C5-47B3-BDD2-B0D5468ADDFB}",
+      "normalized_components": {
+        "luckAdjusted": 88.8889,
+        "recordAndPoints": 62.381,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 88.8889,
+        "recordAndPoints": 62.381,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2024,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 72.662,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{B26EFF10-1B2E-4495-B87A-998757F98DD4}",
+      "normalized_components": {
+        "luckAdjusted": 33.3333,
+        "recordAndPoints": 70.4762,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 33.3333,
+        "recordAndPoints": 70.4762,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2024,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 61.1064,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{93DF645F-8A43-4C8A-ADC8-36D95891FADC}",
+      "normalized_components": {
+        "luckAdjusted": 11.1111,
+        "recordAndPoints": 23.8095,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 11.1111,
+        "recordAndPoints": 23.8095,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2024,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 65.4556,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{CA6D383B-6C1F-4BDE-8D68-B09F4DCF9CBE}",
+      "normalized_components": {
+        "luckAdjusted": 22.2222,
+        "recordAndPoints": 40.0,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 22.2222,
+        "recordAndPoints": 40.0,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2024,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 67.3286,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{57834E28-C9FC-47AB-834E-28C9FC37AB2B}",
+      "normalized_components": {
+        "luckAdjusted": 33.3333,
+        "recordAndPoints": 43.8095,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 33.3333,
+        "recordAndPoints": 43.8095,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2025,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 82.408,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{66937352-9B33-40B8-AF5B-C75D821EF507}",
+      "normalized_components": {
+        "luckAdjusted": 88.8889,
+        "recordAndPoints": 91.4286,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 88.8889,
+        "recordAndPoints": 91.4286,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2025,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 63.5509,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{22061588-C6B5-4D9D-AB62-3DDB1E319C9D}",
+      "normalized_components": {
+        "luckAdjusted": 22.2222,
+        "recordAndPoints": 30.4762,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 22.2222,
+        "recordAndPoints": 30.4762,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2025,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 65.5509,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{4F8022C8-6199-4013-9A8D-E2F26D5BD06C}",
+      "normalized_components": {
+        "luckAdjusted": 55.5556,
+        "recordAndPoints": 23.8095,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 55.5556,
+        "recordAndPoints": 23.8095,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2025,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 58.662,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{5F9FE98A-9553-40DC-95D5-13E21A7206B7}",
+      "normalized_components": {
+        "luckAdjusted": 0.0,
+        "recordAndPoints": 17.1429,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 0.0,
+        "recordAndPoints": 17.1429,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2025,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 70.535,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{FA38E2A0-FE4A-4BB8-B525-FE090DDB1DA9}",
+      "normalized_components": {
+        "luckAdjusted": 44.4444,
+        "recordAndPoints": 54.2857,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 44.4444,
+        "recordAndPoints": 54.2857,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2025,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 67.0112,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{F0FA6DE4-53C5-47B3-BDD2-B0D5468ADDFB}",
+      "normalized_components": {
+        "luckAdjusted": 11.1111,
+        "recordAndPoints": 53.3334,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 11.1111,
+        "recordAndPoints": 53.3334,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2025,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 77.6778,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{B26EFF10-1B2E-4495-B87A-998757F98DD4}",
+      "normalized_components": {
+        "luckAdjusted": 77.7778,
+        "recordAndPoints": 73.3333,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 77.7778,
+        "recordAndPoints": 73.3333,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2025,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 69.9001,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{93DF645F-8A43-4C8A-ADC8-36D95891FADC}",
+      "normalized_components": {
+        "luckAdjusted": 66.6667,
+        "recordAndPoints": 40.0,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 66.6667,
+        "recordAndPoints": 40.0,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2025,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 79.7096,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{CA6D383B-6C1F-4BDE-8D68-B09F4DCF9CBE}",
+      "normalized_components": {
+        "luckAdjusted": 100.0,
+        "recordAndPoints": 72.381,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 100.0,
+        "recordAndPoints": 72.381,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": 2025,
+      "warnings": [
+        "retrospective value captured, not ex-ante decision quality",
+        "FAAB context unavailable: bidAmount is always 0",
+        "1645 acquisition rows excluded with reason"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "low",
+      "final_score": 63.5509,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{22061588-C6B5-4D9D-AB62-3DDB1E319C9D}",
+      "normalized_components": {
+        "luckAdjusted": 22.2222,
+        "recordAndPoints": 30.4762,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 22.2222,
+        "recordAndPoints": 30.4762,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": null,
+      "warnings": [
+        "2026 excluded from career ratings by default"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 70.4727,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{421AC22C-94A5-4561-B4CB-67C112F38645}",
+      "normalized_components": {
+        "luckAdjusted": 61.1111,
+        "recordAndPoints": 45.641,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 61.1111,
+        "recordAndPoints": 45.641,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": null,
+      "warnings": [
+        "2026 excluded from career ratings by default"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 66.0456,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{4EE7DEB2-326D-4C66-A503-A84341D1AA39}",
+      "normalized_components": {
+        "luckAdjusted": 24.4444,
+        "recordAndPoints": 41.8389,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 24.4444,
+        "recordAndPoints": 41.8389,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": null,
+      "warnings": [
+        "2026 excluded from career ratings by default"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 70.1064,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{4F8022C8-6199-4013-9A8D-E2F26D5BD06C}",
+      "normalized_components": {
+        "luckAdjusted": 61.1111,
+        "recordAndPoints": 43.8095,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 61.1111,
+        "recordAndPoints": 43.8095,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": null,
+      "warnings": [
+        "2026 excluded from career ratings by default"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 72.8455,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{57834E28-C9FC-47AB-834E-28C9FC37AB2B}",
+      "normalized_components": {
+        "luckAdjusted": 64.8148,
+        "recordAndPoints": 55.6532,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 64.8148,
+        "recordAndPoints": 55.6532,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": null,
+      "warnings": [
+        "2026 excluded from career ratings by default"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 64.4292,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{5F9FE98A-9553-40DC-95D5-13E21A7206B7}",
+      "normalized_components": {
+        "luckAdjusted": 25.9259,
+        "recordAndPoints": 33.0159,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 25.9259,
+        "recordAndPoints": 33.0159,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": null,
+      "warnings": [
+        "2026 excluded from career ratings by default"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 73.3091,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{66937352-9B33-40B8-AF5B-C75D821EF507}",
+      "normalized_components": {
+        "luckAdjusted": 55.5556,
+        "recordAndPoints": 62.6007,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 55.5556,
+        "recordAndPoints": 62.6007,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": null,
+      "warnings": [
+        "2026 excluded from career ratings by default"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "low",
+      "final_score": 68.1565,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{69B55CFD-5402-41D6-B55C-FD540261D6C4}",
+      "normalized_components": {
+        "luckAdjusted": 66.6667,
+        "recordAndPoints": 31.282,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 66.6667,
+        "recordAndPoints": 31.282,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": null,
+      "warnings": [
+        "2026 excluded from career ratings by default"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 65.4133,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{93DF645F-8A43-4C8A-ADC8-36D95891FADC}",
+      "normalized_components": {
+        "luckAdjusted": 37.037,
+        "recordAndPoints": 32.3809,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 37.037,
+        "recordAndPoints": 32.3809,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": null,
+      "warnings": [
+        "2026 excluded from career ratings by default"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 62.837,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{AAA799D7-F3F8-48C7-A799-D7F3F8B8C720}",
+      "normalized_components": {
+        "luckAdjusted": 3.7037,
+        "recordAndPoints": 36.1661,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 3.7037,
+        "recordAndPoints": 36.1661,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": null,
+      "warnings": [
+        "2026 excluded from career ratings by default"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 73.1113,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{B26EFF10-1B2E-4495-B87A-998757F98DD4}",
+      "normalized_components": {
+        "luckAdjusted": 61.1111,
+        "recordAndPoints": 58.8339,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 61.1111,
+        "recordAndPoints": 58.8339,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": null,
+      "warnings": [
+        "2026 excluded from career ratings by default"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "low",
+      "final_score": 83.5191,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{B618B4FC-D3B6-4CD9-B75F-7FC4924DC93B}",
+      "normalized_components": {
+        "luckAdjusted": 100.0,
+        "recordAndPoints": 91.4286,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 100.0,
+        "recordAndPoints": 91.4286,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": null,
+      "warnings": [
+        "2026 excluded from career ratings by default"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 67.371,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{CA6D383B-6C1F-4BDE-8D68-B09F4DCF9CBE}",
+      "normalized_components": {
+        "luckAdjusted": 40.7407,
+        "recordAndPoints": 40.3175,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 40.7407,
+        "recordAndPoints": 40.3175,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": null,
+      "warnings": [
+        "2026 excluded from career ratings by default"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 75.2371,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{DAF4A167-6427-4D4C-9822-1D1988E5D480}",
+      "normalized_components": {
+        "luckAdjusted": 66.6667,
+        "recordAndPoints": 66.685,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 66.6667,
+        "recordAndPoints": 66.685,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": null,
+      "warnings": [
+        "2026 excluded from career ratings by default"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 69.6042,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{F0FA6DE4-53C5-47B3-BDD2-B0D5468ADDFB}",
+      "normalized_components": {
+        "luckAdjusted": 51.8519,
+        "recordAndPoints": 45.928,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 51.8519,
+        "recordAndPoints": 45.928,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": null,
+      "warnings": [
+        "2026 excluded from career ratings by default"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    },
+    {
+      "confidence": "medium",
+      "final_score": 72.143,
+      "formula_version": "mygm-retrospective-v1",
+      "manager_key": "espn-owner:{FA38E2A0-FE4A-4BB8-B525-FE090DDB1DA9}",
+      "normalized_components": {
+        "luckAdjusted": 55.5556,
+        "recordAndPoints": 56.7705,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "raw_components": {
+        "luckAdjusted": 55.5556,
+        "recordAndPoints": 56.7705,
+        "tradePerformance": 100.0,
+        "waiverPerformance": 57.8097
+      },
+      "season": null,
+      "warnings": [
+        "2026 excluded from career ratings by default"
+      ],
+      "weights": {
+        "luckAdjusted": 0.1,
+        "recordAndPoints": 0.2,
+        "tradePerformance": 0.35,
+        "waiverPerformance": 0.35
+      }
+    }
+  ],
+  "manager_identity": {
+    "all_team_seasons_mapped": true,
+    "manager_count": 16,
+    "team_season_count": 70,
+    "unresolved_owner_buckets": 0
+  },
+  "records": {
+    "highest_weekly_score": 218.72,
+    "lowest_weekly_score": 0.0,
+    "seasons_counted": 6,
+    "total_losses": 413,
+    "total_ties": 4,
+    "total_wins": 413
+  },
+  "seasons": [
+    {
+      "final_week": 16,
+      "is_partial": false,
+      "schedule_items": 81,
+      "season": 2020,
+      "source_file": "../../tests/fixtures/espn/league_18254195/season_2020/_season_summary.json",
+      "transaction_count": 3182
+    },
+    {
+      "final_week": 17,
+      "is_partial": false,
+      "schedule_items": 86,
+      "season": 2021,
+      "source_file": "../../tests/fixtures/espn/league_18254195/season_2021/_season_summary.json",
+      "transaction_count": 2142
+    },
+    {
+      "final_week": 17,
+      "is_partial": false,
+      "schedule_items": 86,
+      "season": 2022,
+      "source_file": "../../tests/fixtures/espn/league_18254195/season_2022/_season_summary.json",
+      "transaction_count": 1747
+    },
+    {
+      "final_week": 17,
+      "is_partial": false,
+      "schedule_items": 86,
+      "season": 2023,
+      "source_file": "../../tests/fixtures/espn/league_18254195/season_2023/_season_summary.json",
+      "transaction_count": 1418
+    },
+    {
+      "final_week": 17,
+      "is_partial": false,
+      "schedule_items": 86,
+      "season": 2024,
+      "source_file": "../../tests/fixtures/espn/league_18254195/season_2024/_season_summary.json",
+      "transaction_count": 1896
+    },
+    {
+      "final_week": 17,
+      "is_partial": false,
+      "schedule_items": 86,
+      "season": 2025,
+      "source_file": "../../tests/fixtures/espn/league_18254195/season_2025/_season_summary.json",
+      "transaction_count": 2759
+    },
+    {
+      "final_week": 17,
+      "is_partial": true,
+      "schedule_items": 70,
+      "season": 2026,
+      "source_file": "../../tests/fixtures/espn/league_18254195/season_2026/_season_summary.json",
+      "transaction_count": 0
+    }
+  ],
+  "status": "PASS",
+  "trade_analytics": {
+    "canonical_graded_trade_events": 145,
+    "canonical_groups_with_multiple_rows": 0,
+    "completed_trade_accept_rows": 145,
+    "graded_rows": 145,
+    "item_sources": {
+      "roster_movement": 145
+    },
+    "ungraded_reasons": {},
+    "ungraded_rows": 0
+  }
+}

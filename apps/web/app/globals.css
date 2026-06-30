@@ -1,0 +1,224 @@
+@import "tailwindcss";
+
+/* ============================================================
+   MyGM "2K / MyGM-Menu" theme tokens.
+   Replaces the legacy RotoBot cyan theme in place — same token
+   NAMES, new VALUES, plus a few additions. Component CSS reads
+   these tokens, so most surfaces re-skin by this swap alone.
+   Reference look: new-ui-test/mygm-menu.html.
+   ============================================================ */
+
+:root {
+  /* Deep navy base */
+  --navy0: #0a0e1a;
+  --navy1: #0e1428;
+
+  /* Surfaces (navy/charcoal, angular glass) */
+  --surface-primary: #0a0e1a;
+  --surface-secondary: #0e1730;
+  --surface-raised: #16223c;
+  --surface-tint: #121c33;
+  --surface-inset: #090f1d;
+  --panel: rgba(18, 26, 43, 0.82);
+  --panel-2: rgba(14, 21, 37, 0.9);
+
+  /* Text */
+  --text-primary: #eaf0fb;
+  --text-secondary: #9daac2;
+  --text-muted: #6f7c95;
+  --ink: #0a0e1a;
+
+  /* Borders */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --border-cyan: rgba(255, 230, 0, 0.32);
+  --border-cyan-strong: rgba(255, 230, 0, 0.55);
+  --line: rgba(255, 255, 255, 0.08);
+
+  /* Primary accent = electric yellow; secondaries blue/magenta/green */
+  --yellow: #ffe600;
+  --blue: #2e7bff;
+  --blue2: #1b6cf0;
+  --indigo: #5b2bd9;
+  --magenta: #e0249a;
+  --green: #39d353;
+  --orange: #ff9a3c;
+  --steel: #9aa7b8;
+
+  --accent-primary: #ffe600;
+  --accent-hover: #fff04d;
+  --brand: #2e7bff;
+  --brand-strong: #bfd8ff;
+  --brand-glow: rgba(255, 230, 0, 0.5);
+  --cta-grad: linear-gradient(120deg, #ffe600, #ffc400);
+  --cta-glow: 0 8px 26px -8px rgba(255, 230, 0, 0.55);
+
+  /* Status */
+  --status-success: #39d353;
+  --status-warning: #ff9a3c;
+  --status-error: #ff5c7a;
+  --status-info: #2e7bff;
+
+  /* Category / data accents (rgb triplets for alpha use) */
+  --accent-players: 224, 36, 154;
+  --accent-rankings: 255, 230, 0;
+  --accent-insights: 57, 211, 83;
+  --accent-trades: 46, 123, 255;
+  --accent-waivers: 91, 43, 217;
+
+  /* Grade scale → tier colors */
+  --grade-a: #39d353;
+  --grade-b: #2e7bff;
+  --grade-c: #ffe600;
+  --grade-d: #ff9a3c;
+  --grade-f: #ff5c7a;
+
+  /* OVR tier colors — 3-tier system (Elite / High / Average).
+     --tier-average is the amber floor (was the legacy MID). --tier-low (steel)
+     is retained ONLY for the distinct UNRATED/withheld state, not a tier.
+     --tier-mid is kept as a back-compat alias of --tier-average. */
+  --tier-elite: #39d353;
+  --tier-high: #ffe600;
+  --tier-average: #ff9a3c;
+  --tier-mid: #ff9a3c;
+  --tier-low: #9aa7b8;
+
+  /* Player-badge accents beyond the tier palette (TD reliance, matchup swing). */
+  --badge-td: #b56cff;
+  --badge-matchup: #2dd4bf;
+
+  /* Subtly rounded everywhere (~8px); the angular nav tabs + chevron bars stay sharp. */
+  --radius-control: 8px;
+  --radius-panel: 10px;
+
+  /* Type: condensed display + clean body sans + tech mono */
+  --font-app: var(--font-sans, "Rubik"), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-num: var(--font-mono, "JetBrains Mono"), ui-monospace, Menlo, Consolas, monospace;
+  --font-display: var(--font-saira, "Saira Condensed"), "Oswald", "Arial Narrow", sans-serif;
+  --font-tech: var(--font-chakra, "Chakra Petch"), var(--font-num);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--surface-primary);
+  color: var(--text-primary);
+}
+
+body {
+  min-height: 100dvh;
+  margin: 0;
+  font-family: var(--font-app);
+  font-size: 14px;
+  color: var(--text-primary);
+  background:
+    radial-gradient(
+      120% 90% at 50% 45%,
+      rgba(10, 14, 26, 0) 0%,
+      rgba(10, 14, 26, 0.55) 55%,
+      rgba(8, 11, 20, 0.92) 100%
+    ),
+    linear-gradient(135deg, #0a0e1a 0%, #0e1428 50%, #0a0e1a 100%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+/* ---- Fixed background flourish layers (angular wash + slashes + scanlines) ---- */
+body::before {
+  content: "";
+  position: fixed;
+  inset: -20%;
+  z-index: -3;
+  pointer-events: none;
+  background:
+    radial-gradient(60% 80% at 8% 6%, rgba(27, 108, 240, 0.5) 0%, rgba(27, 108, 240, 0) 55%),
+    radial-gradient(55% 75% at 96% 10%, rgba(224, 36, 154, 0.45) 0%, rgba(224, 36, 154, 0) 55%),
+    radial-gradient(70% 80% at 92% 96%, rgba(91, 43, 217, 0.5) 0%, rgba(91, 43, 217, 0) 55%),
+    radial-gradient(60% 70% at 4% 94%, rgba(46, 123, 255, 0.38) 0%, rgba(46, 123, 255, 0) 55%),
+    radial-gradient(50% 50% at 50% 50%, rgba(0, 212, 255, 0.08) 0%, rgba(0, 0, 0, 0) 60%);
+  filter: saturate(1.12);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image:
+    repeating-linear-gradient(
+      118deg,
+      rgba(255, 255, 255, 0.045) 0,
+      rgba(255, 255, 255, 0.045) 2px,
+      transparent 2px,
+      transparent 46px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.16) 0,
+      rgba(0, 0, 0, 0.16) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  mix-blend-mode: overlay;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button,
+a,
+input,
+select {
+  transition:
+    border-color 140ms ease,
+    background-color 140ms ease,
+    color 140ms ease,
+    box-shadow 140ms ease,
+    opacity 140ms ease,
+    transform 140ms ease;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--brand-glow);
+  color: var(--ink);
+}
+
+/* Tabular numbers everywhere stats live */
+.num,
+.data-table td,
+.detail-table td {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
